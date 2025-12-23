@@ -1,0 +1,7 @@
+fastapi[all]==0.115.0          # Основной фреймворк + все зависимости (включая starlette, pydantic)
+uvicorn==0.30.6                # ASGI-сервер (альтернатива hypercorn)
+hypercorn==0.17.3              # Альтернативный сервер, лучше работает на Windows
+sqlalchemy==2.0.35             # ORM для работы с базой данных
+pydantic[email]==2.9.2         # Валидация данных + email-validator для EmailStr
+python-jose[cryptography]==3.3.0  # Для работы с JWT-токенами
+bcrypt==4.2.0                  # Хэширование паролей (заменили passlib)
